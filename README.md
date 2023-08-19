@@ -1,2 +1,3 @@
-# F3-C2_Aug
-FrontEnd 3, Contest 2, August 19 2023
+# FrontEnd Module 3, Contest 2
+
+Deployed link [👆](https://r3workz.github.io/F3-C2_Aug/)

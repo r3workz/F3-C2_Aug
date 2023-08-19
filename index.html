@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P.O.-App</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="index.js"></script>
+</head>
+<body>
+
+<main id="start" class="pre hidden">
+    <section id="secOne">
+        <h2 class="dark">Post Office Application</h2>
+        <p>This Application Allows you to extract information about the nearest Post Offices, based on your location.</p>
+        <img src="./banner.png" alt="banner">
+    </section>
+    <section id="secTwo">
+        <h2>Your Current IP Address is <span id="ip"></span></h2>
+        <button id="btnStart">Get Started</button>
+    </section>
+</main>
+
+<main id="loader" class="loaderBox">
+    <div id="circleLoader"></div>
+</main>
+
+<main id="mainPage" class="main hidden">
+    <section id="mainSecOne">
+        <div class="ip">IP Address: <span id="userIp"></span></div>
+        <div class="basicInfo">
+            <div>Lat: <span id="userLat"></span></div>
+            <div>City: <span id="userCity"></span></div>
+            <div>Organistaion: <span id="userOrg"></span></div>
+            <div>Long: <span id="userLong"></span></div>
+            <div>Region: <span id="userReg"></span></div>
+<!--            <div>Hostname: <span id="userHost">NA</span></div>-->
+        </div>
+    </section>
+    <section id="mainSecTwo">
+        <h2>Your Current Location</h2>
+        <div id="mapBox">
+
+        </div>
+    </section>
+    <section id="mainSecThree">
+        <h2>More Information About You</h2>
+        <div class="moreInfo">
+            <div>Time Zone: <span id="userTimeZone"></span></div>
+            <div>DateTime: <span id="userDateTime"></span></div>
+            <div>Pincode: <span id="userPin"></span></div>
+            <div>Message: <span id="userMsg"></span></div>
+        </div>
+    </section>
+    <section id="mainSecFour">
+        <h2>Post Offices Near You</h2>
+        <input id="searchPO" type="search" placeholder="Search By Name">
+        <div id="viewPostOffices">
+<!--            TODO-->
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
